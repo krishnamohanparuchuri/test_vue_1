@@ -1,12 +1,24 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <!-- <router-link to="/">Home</router-link>|
+      <router-link to="/about">About</router-link>-->
+      <!-- <router-link to="/nested-route">Nested Route</router-link> -->
+      <NestedRoute />
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
+
+<script>
+import NestedRoute from "@/components/NestedRoute.vue";
+export default {
+  name: "App",
+  components: {
+    NestedRoute,
+  },
+};
+</script>
 
 <style>
 #app {
